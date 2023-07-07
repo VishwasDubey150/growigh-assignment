@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skip"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:onClick="nextscreen3"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/skip_btn_bg"
+        android:fontFamily="@font/noto_sans"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="skip intro"
+        android:textAllCaps="false"
+        android:textColor="#FF3A7EB0"
+        android:textSize="12sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <ImageView
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_230sdp"
+        android:src="@drawable/v"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp">
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:cardCornerRadius="@dimen/_48sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:fontFamily="@font/noto_sans"
+                android:textSize="32sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/noto_sans"
+                android:layout_marginTop="@dimen/_10sdp">
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="ready"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:cardCornerRadius="@dimen/_150sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ready"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_gravity="center">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

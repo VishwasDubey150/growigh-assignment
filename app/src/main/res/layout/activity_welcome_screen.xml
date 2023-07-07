@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome_screen"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/w"
+        android:layout_marginTop="@dimen/_100sdp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Vishwas"
+        android:layout_gravity="center"
+        android:fontFamily="@font/noto_sans"
+        android:textSize="32sp">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/feed"
+        android:layout_width="342dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Feeds"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload_image"
+        android:layout_width="342dp"
+        android:layout_height="74dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_gravity="center"
+        android:text="Upload Image"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
